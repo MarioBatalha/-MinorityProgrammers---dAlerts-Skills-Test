@@ -7,7 +7,9 @@
 
 <h1 align="center">dAlert</h1>
 
-lorem...
+My task is to build dAlerts, a notification system for DEX (decentralized exchanges), more
+information below. The following is a ReactJS front end test. As part of this assignment here are
+the following learning outcomes....
 
 
 <h1 align="center">

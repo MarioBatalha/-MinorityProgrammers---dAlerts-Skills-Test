@@ -8,12 +8,10 @@ import data from '../data/data';
 
 const Main = () => {
     const [ isOpenModal, setIsOpenModal ] = useState<boolean>(false);
-    const [alert, setAlert ] = useState([]);
-
+    const [alert, setAlert ] = useState(data);
 
     const handleOpenModal = () => {
       setIsOpenModal(true);
-      console.log('clicked')
     };
 
      const handleCloseModal = () => {
@@ -21,9 +19,12 @@ const Main = () => {
     };
 
     const handleRemoveAlert = ({ id }: any) => {
-      const newAlert = data.filter(alert => alert.id !== id)
-      console.log('clicked remove alert')
-      
+      const newAlert = alert.filter((alert) => alert.id !== id)
+      setAlert(newAlert);      
+    };
+
+    const handleAddAlert = () => {
+
     };
     return (
         <>
@@ -50,7 +51,7 @@ const Main = () => {
             </ul> 
             <hr className='horizontal__line' />
             <div className='filters__search'>
-              <button className='filters__search__icon' type='submit'>
+              <button className='filters__search__icon' type='submit' onClick={handleAddAlert}>
                 <FiSearch color='#256EFF' size={25} />
               </button>
               <input 
@@ -87,7 +88,7 @@ const Main = () => {
                       <button 
                       type='button'
                       className='cancel__button'
-                      onClick={handleRemoveAlert}
+                      onClick={() => handleRemoveAlert(id)}
                       >CANCEL</button>
                     </td>
                   </tr>

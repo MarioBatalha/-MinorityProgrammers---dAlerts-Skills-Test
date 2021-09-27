@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    title: "Binance",
+    title: "Binar",
     desc: "Pancake Swap",
     subtitle: "Ethereum",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIbIS1ipkmMkeEHQ8di9qmWt-O3n2fgs2tCCFekyrLII1n7ubs6fEQnB2ddF9NIO3HQK0&usqp=CAU",
@@ -51,7 +51,7 @@ export default [
   },
   {
     id: 6,
-    title: "Milkshake",
+    title: "Coffee",
     desc: "Lunch Swap",
     subtitle: "BSC",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_C5MrT9EPVbt8SHJuXtf8imb8ofmQLUUYw&usqp=CAU",
@@ -95,16 +95,6 @@ export default [
     desc: "Pancake Swap",
     subtitle: "Ethereum",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCp6fJIGWXU4yINLHycDB45HJba6puA9mcSA&usqp=CAU",
-    alertPrice: 0.88,
-    currentPrice: 0.8,
-    notificationType: "Twitter",
-  },
-  {
-    id: 10,
-    title: "Turkey",
-    desc: "Pancake Swap",
-    subtitle: "Ethereum",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRflB0vZgV5uNiF951PZPHlYwbiIMk9tO9DAg&usqp=CAU",
     alertPrice: 0.88,
     currentPrice: 0.8,
     notificationType: "Twitter",
