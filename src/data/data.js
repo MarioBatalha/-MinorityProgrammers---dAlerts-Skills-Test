@@ -4,7 +4,7 @@ export default [
     title: "Turkey",
     desc: "Pancake Swap",
     subtitle: "Ethereum",
-    img: "https://www.figma.com/file/9NxerDX5aPR4HBwbiaCQdQ/dAlerts-Skills-Test?node-id=0%3A1",
+    img: "https://drive.google.com/drive/u/0/folders/1vkGm14qRI8kgYqrSx4AW6kzANor7zIhu",
     alertPrice: 0.88,
     currentPrice: 0.8,
     notificationType: "Twitter",

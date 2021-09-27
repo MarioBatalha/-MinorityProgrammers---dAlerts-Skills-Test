@@ -8,6 +8,8 @@ import data from '../data/data';
 
 const Main = () => {
     const [ isOpenModal, setIsOpenModal ] = useState<boolean>(false);
+    const [alert, setAlert ] = useState([]);
+
 
     const handleOpenModal = () => {
       setIsOpenModal(true);
@@ -16,6 +18,12 @@ const Main = () => {
 
      const handleCloseModal = () => {
       setIsOpenModal(false);
+    };
+
+    const handleRemoveAlert = ({ id }: any) => {
+      const newAlert = data.filter(alert => alert.id !== id)
+      console.log('clicked remove alert')
+      
     };
     return (
         <>
@@ -72,13 +80,14 @@ const Main = () => {
                       <small>{subtitle}</small>
                     </span>
                     </td>      
-                    <td>{alertPrice}</td>
-                    <td>{currentPrice}</td>
+                    <td>${alertPrice}</td>
+                    <td>${currentPrice}</td>
                     <td>{notificationType}</td>
                     <td>
                       <button 
                       type='button'
                       className='cancel__button'
+                      onClick={handleRemoveAlert}
                       >CANCEL</button>
                     </td>
                   </tr>

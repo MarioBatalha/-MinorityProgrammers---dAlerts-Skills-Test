@@ -193,6 +193,7 @@ td {
 td:nth-child(1) {
     display: flex;
     width: 1rem;
+    text-transform: uppercase;
 }
 
 td:nth-child(2) {
@@ -210,6 +211,7 @@ td:nth-child(4) {
 
 td:nth-child(5) {
     text-align: right;
+    text-transform: uppercase;
     margin: 2rem;
 }
 
@@ -363,6 +365,39 @@ label {
     opacity: 0.5;
     transition: 0.6s;
 } 
+
+@media screen and (min-width: 800px) {
+ main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    hr {
+        width: 100vw;
+    }
+
+}
+
+@media screen and (min-width: 375px) {
+    main {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    hr {
+         width: 100vw;
+    }
+
+    li {
+        display: row;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+  }
 
 
 
