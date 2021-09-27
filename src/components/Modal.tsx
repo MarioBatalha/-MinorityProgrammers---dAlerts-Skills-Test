@@ -2,6 +2,8 @@ import React from  'react';
 import { GrClose } from 'react-icons/gr';
 
 const Modal = ({ handleCloseModal }: any) => {
+  const handleAddAlert = () => {
+  };
     return (
         <>
           <div className='modal__container'>
@@ -59,7 +61,12 @@ const Modal = ({ handleCloseModal }: any) => {
                           <option value='LINKEDIN'>LINKEDIN</option>
                       </select>
                       </label>
-                      <button type='submit' className='add__alert'>Add Alert</button>
+                      <button 
+                      type='submit'
+                      className='add__alert'
+                      onClick={handleAddAlert}>
+                        Add Alert
+                      </button>
                     </div>
                   </form>
             </div>

@@ -18,14 +18,11 @@ const Main = () => {
       setIsOpenModal(false);
     };
 
-    const handleRemoveAlert = ({ id }: any) => {
+    const handleRemoveAlert = ( id: number ) => {
       const newAlert = alert.filter((alert) => alert.id !== id)
-      setAlert(newAlert);      
+      setAlert(newAlert);   
     };
 
-    const handleAddAlert = () => {
-
-    };
     return (
         <>
           <main>
@@ -51,7 +48,7 @@ const Main = () => {
             </ul> 
             <hr className='horizontal__line' />
             <div className='filters__search'>
-              <button className='filters__search__icon' type='submit' onClick={handleAddAlert}>
+              <button className='filters__search__icon' type='submit'>
                 <FiSearch color='#256EFF' size={25} />
               </button>
               <input 

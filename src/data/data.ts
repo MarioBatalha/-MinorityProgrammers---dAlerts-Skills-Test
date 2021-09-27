@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
     id: 1,
@@ -199,4 +200,4 @@ export default [
     currentPrice: 0.8,
     notificationType: "Twitter",
   },
-];
+]
