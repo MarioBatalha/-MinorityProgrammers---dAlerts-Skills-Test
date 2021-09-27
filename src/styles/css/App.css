@@ -224,6 +224,7 @@ td:nth-child(6) {
     width: 4rem;
     height: 4rem;
     padding: 1rem;
+    border-radius: 100px;
 }
 
 .cancel__button {
@@ -389,12 +390,6 @@ label {
 
     hr {
          width: 100vw;
-    }
-
-    li {
-        display: row;
-        padding: 1rem;
-        margin: 1rem;
     }
 
   }
